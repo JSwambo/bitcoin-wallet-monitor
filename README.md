@@ -6,6 +6,8 @@ Custody is fundamental to all Bitcoin operations and so tools are needed to bett
 
 Consider the example of [vault-custody](https://arxiv.org/abs/2005.11776). Here, the transfer of control of funds is highly restricted by enforcing a vault covenant that stipulates that funds can only be moved to either a hot wallet after the expiration of a time-lock, or to an emergency distributed deep cold wallet. The time-lock enables a delay-period where a wallet owner can respond to detected intrusions. The security of this *requires* a secure functioning wallet monitor and response system. 
 
+Building a wallet-monitor according to state-of-the-art applied information security and subjecting the sytem to advanced penetration testing will provide a solid foundation for more complicated infrastructure such as Watchtowers. The benefit to starting with a wallet-monitor is that the focus is on fundamental security and reliability, rather than an attempt to engineer a stable incentive structure for outsourcing monitor and response systems. If the foundations aren't strong, then even a perfect incentive structure will not be worthwile. 
+
 ## Design Questions
 
 Is it necessary for the monitor to operate a full bitcoin-core node?
